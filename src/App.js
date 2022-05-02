@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MainPage from "./MainPage";
 import Signup from "./pages/signup/Signup";
 import Login from "./pages/login/Login";
-import Me from "./pages/me/Me";
+import Me from "./pages/me/GelirGider";
 import MySkills from "./pages/me/my-skills/MySkills";
 import MyHabits from "./pages/me/my-habits/MyHabits";
 import IncomeExpenses from "./pages/me/inventory/income-expenses/IncomeExpenses";
@@ -25,10 +25,15 @@ import Personal from "./pages/me/missions/personal/Personal";
 import Social from "./pages/me/missions/social/Social";
 import WillPower from "./pages/me/missions/will-power/WillPower";
 
+import Navbar from "./components/navbar/Navbar";
+import GelirGider from "./pages/me/GelirGider";
+
 function App() {
   return (
     <div className="app">
       <BrowserRouter>
+        <Navbar />
+
         <Routes>
           <Route path="/" element={<MainPage />} />
 
@@ -36,7 +41,7 @@ function App() {
 
           <Route path="/login" element={<Login />} />
 
-          <Route path="/me" element={<Me />} />
+          <Route path="/gelir-gider" element={<GelirGider />} />
           <Route path="/me/my-skills" element={<MySkills />} />
           <Route path="/me/my-habits" element={<MyHabits />} />
           <Route path="/me/invertory" element={<IncomeExpenses />} />

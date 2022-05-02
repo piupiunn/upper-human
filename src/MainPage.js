@@ -1,15 +1,9 @@
 import React from "react";
 //style
 import "./MainPage.css";
-import IncomeExpenses from "./pages/me/inventory/income-expenses/IncomeExpenses";
-import Missions from "./pages/me/missions/Missions";
-import MyMissions from "./pages/me/missions/my-missions/MyMissions";
+
+import GelirGider from "./pages/me/GelirGider";
 
 export default function MainPage() {
-  return (
-    <div>
-      <Missions />
-      <MyMissions />{" "}
-    </div>
-  );
+  return <div></div>;
 }

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 //style
 import "./MyMissions.css";
 export default function MyMissions({ myMissions }) {
@@ -6,7 +7,7 @@ export default function MyMissions({ myMissions }) {
 
   const completeMission = (myMission) => {
     const completedMission = {
-      title: myMission.title,
+      description: myMission.description,
     };
     addCompletedMission(completedMission);
   };
@@ -18,26 +19,32 @@ export default function MyMissions({ myMissions }) {
   };
 
   return (
-    <div>
-      <div className="my-missions">
-        {myMissions?.map((myMission) => (
-          <>
-            <>
-              <h3>{myMission.title}</h3>
-              <h3>{myMission.description}</h3>
-              <h3>{myMission.point}</h3>
-            </>
-            <button onClick={() => completeMission(myMission)}>
-              Complete Mission
-            </button>
-          </>
-        ))}
+    <>
+      <div className="my-missions-box">
+        <div>
+          {myMissions?.map((myMission) => (
+            <div className="my-missions-box-inside">
+              <>
+                <h3>{myMission.description}</h3>
+                <h3>{myMission.point}</h3>
+              </>
+              <button
+                className="complete-mission"
+                onClick={() => completeMission(myMission)}
+              >
+                Complete Mission
+              </button>
+            </div>
+          ))}
+        </div>
+        <div>
+          {completedMissions.map((compMissions) => (
+            <div className="completed-missions">
+              <h3>{compMissions.description}</h3>
+            </div>
+          ))}
+        </div>
       </div>
-      <div className="my-skills">
-        {completedMissions.map((compMissions) => (
-          <h3>{compMissions.title}</h3>
-        ))}
-      </div>
-    </div>
+    </>
   );
 }

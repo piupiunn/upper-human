@@ -1,0 +1,17 @@
+.all-missions {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+}
+.missions {
+  width: 350px;
+  padding: 10px;
+  border: 1px solid black;
+}
+button {
+  width: 320px;
+}
+.new-missions {
+  margin-left: 38%;
+  margin-top: 10px;
+}

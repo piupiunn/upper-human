@@ -1,2 +1,18 @@
-.app {
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: white;
+}
+body {
+  width: 2000px;
+  background-color: #222426;
+  font-family: "Poiret One", cursive;
+}
+button {
+  font-family: inherit;
+  background-color: #c83232;
+  border: none;
+  border-radius: 15px;
+  width: 60px;
 }

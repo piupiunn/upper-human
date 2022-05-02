@@ -13,11 +13,13 @@ import Outdoor from "./outdoor/Outdoor";
 import Personal from "./personal/Personal";
 import Social from "./social/Social";
 import WillPower from "./will-power/WillPower";
+import MyHabits from "../my-habits/MyHabits";
 //style
 import "./Missions.css";
 import MyMissions from "./my-missions/MyMissions";
 
 export default function Missions() {
+  const [showMissions, setShowMissions] = useState(false);
   const [myMissions, setMymissions] = useState([]);
   const [showFun, setShowfun] = useState(false);
   const [showDiy, setShowdiy] = useState(false);
@@ -41,80 +43,104 @@ export default function Missions() {
   //
   console.log(showFun);
   return (
-    <div className="all-missions">
-      <div className="missions">
-        <div>
-          <Books addMissions={addMissions} />
-          <button>Books</button>
+    <>
+      <button
+        className="new-missions"
+        onClick={() =>
+          showMissions ? setShowMissions(false) : setShowMissions(true)
+        }
+      >
+        New Missions
+      </button>
+      <div className="all-missions">
+        <div className="me-myhabits">
+          <MyHabits />
         </div>
+        {showMissions && (
+          <div className="missions">
+            <div>
+              <Books addMissions={addMissions} />
+              <button>Books</button>
+            </div>
 
-        <div>
-          <Diy addMissions={addMissions} />
-          <button>Diy</button>
-        </div>
+            <div>
+              <Diy addMissions={addMissions} />
+              <button>Diy</button>
+            </div>
 
-        <div>
-          <Finance addMissions={addMissions} />
-          <button>Finance</button>
-        </div>
+            <div>
+              <Finance addMissions={addMissions} />
+              <button>Finance</button>
+            </div>
 
-        <div>
-          <FoodCooking addMissions={addMissions} />
-          <button>Food-Cooking</button>
-        </div>
+            <div>
+              <FoodCooking addMissions={addMissions} />
+              <button>Food-Cooking</button>
+            </div>
 
-        <div>
-          <Habits addMissions={addMissions} />
-          <button>Habits</button>
-        </div>
+            <div>
+              <Habits addMissions={addMissions} />
+              <button>Habits</button>
+            </div>
 
-        <div>
-          <Health addMissions={addMissions} />
-          <button>Health</button>
-        </div>
+            <div>
+              <Health addMissions={addMissions} />
+              <button>Health</button>
+            </div>
 
-        <div>
-          <HouseHold addMissions={addMissions} />
-          <button>Household</button>
-        </div>
+            <div>
+              <HouseHold addMissions={addMissions} />
+              <button>Household</button>
+            </div>
 
-        <div>
-          <Humanity addMissions={addMissions} />
-          <button>Humanity</button>
-        </div>
+            <div>
+              <Humanity addMissions={addMissions} />
+              <button>Humanity</button>
+            </div>
 
-        <div>
-          <Outdoor addMissions={addMissions} />
-          <button>Outdoor</button>
-        </div>
+            <div>
+              <Outdoor addMissions={addMissions} />
+              <button>Outdoor</button>
+            </div>
 
-        <div>
-          <WillPower addMissions={addMissions} />
-          <button>Willpower</button>
-        </div>
+            <div>
+              <WillPower addMissions={addMissions} />
+              <button>Willpower</button>
+            </div>
 
-        <div>
-          <Personal addMissions={addMissions} />
-          <button>Personal</button>
-        </div>
+            <div>
+              <Personal addMissions={addMissions} />
+              <button>Personal</button>
+            </div>
 
-        <div>
-          <Social addMissions={addMissions} />
-          <button>Social</button>
-        </div>
+            <div>
+              <Social addMissions={addMissions} />
+              <button>Social</button>
+            </div>
 
+            <div>
+              {showFun && (
+                <button
+                  onClick={() =>
+                    showFun ? setShowfun(false) : setShowfun(true)
+                  }
+                >
+                  Fun
+                </button>
+              )}
+              {showFun && <Fun addMissions={addMissions} />}
+              <button
+                onClick={() => (showFun ? setShowfun(false) : setShowfun(true))}
+              >
+                Fun
+              </button>
+            </div>
+          </div>
+        )}
         <div>
-          {showFun && <Fun addMissions={addMissions} />}
-          <button
-            onClick={() => (showFun ? setShowfun(false) : setShowfun(true))}
-          >
-            Fun
-          </button>
+          <MyMissions myMissions={myMissions} />
         </div>
       </div>
-      <div className="my-missions">
-        <MyMissions myMissions={myMissions} />
-      </div>
-    </div>
+    </>
   );
 }

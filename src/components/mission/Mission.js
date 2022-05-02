@@ -13,8 +13,9 @@ export default function Mission({ description, point, addMissions }) {
 
   return (
     <div className="mission-box">
-      <p className="mission-description">HH {description}</p>
-      <p className="point">Başarı Puanı:{point}</p>
+      <div className="icon-box">HHHH</div>
+      <div className="mission-description">{description}</div>
+      <div className="point">Başarı Puanı:{point}</div>
       <button className="mission-button" onClick={addMission}>
         Add to My Missions
       </button>
