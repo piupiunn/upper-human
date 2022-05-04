@@ -1,0 +1,16 @@
+.bill-bot-modal {
+  width: 100px;
+  margin: auto;
+  margin-top: 10%;
+}
+.bill-bot-sections {
+  display: grid;
+}
+.bill-bot-modal-page {
+  justify-items: center;
+}
+.bill-bot-modal-backdrop {
+  margin: 10px;
+  width: 400px;
+  border: 1px solid white;
+}

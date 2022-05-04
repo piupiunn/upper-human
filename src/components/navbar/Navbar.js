@@ -6,7 +6,7 @@ import "./Navbar.css";
 export default function Navbar() {
   return (
     <div className="navbar">
-      <NavLink className="left-border" to="/gelir-gider">
+      <NavLink className="left-border" to="/income-expenses">
         <p>Gelir-Gider</p>
       </NavLink>
       <NavLink to="/missions">

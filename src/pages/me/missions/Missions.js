@@ -21,6 +21,8 @@ import MyMissions from "./my-missions/MyMissions";
 export default function Missions() {
   const [showMissions, setShowMissions] = useState(false);
   const [myMissions, setMymissions] = useState([]);
+  const [myHabits, setMyHabits] = useState([]);
+  //
   const [showFun, setShowfun] = useState(false);
   const [showDiy, setShowdiy] = useState(false);
   const [showBooks, setShowbooks] = useState(false);
@@ -41,7 +43,13 @@ export default function Missions() {
     });
   };
   //
-  console.log(showFun);
+  const addMyHabits = (habits) => {
+    setMyHabits((myHabits) => {
+      return [...myHabits, habits];
+    });
+  };
+  //
+  console.log(myHabits);
   return (
     <>
       <button
@@ -53,8 +61,8 @@ export default function Missions() {
         New Missions
       </button>
       <div className="all-missions">
-        <div className="me-myhabits">
-          <MyHabits />
+        <div className="myhabits">
+          <MyHabits myHabits={myHabits} />
         </div>
         {showMissions && (
           <div className="missions">
@@ -79,7 +87,7 @@ export default function Missions() {
             </div>
 
             <div>
-              <Habits addMissions={addMissions} />
+              <Habits habit addMyHabits={addMyHabits} />
               <button>Habits</button>
             </div>
 
@@ -137,7 +145,7 @@ export default function Missions() {
             </div>
           </div>
         )}
-        <div>
+        <div className="my-missions">
           <MyMissions myMissions={myMissions} />
         </div>
       </div>

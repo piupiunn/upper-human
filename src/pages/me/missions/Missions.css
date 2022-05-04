@@ -1,12 +1,19 @@
 .all-missions {
   display: flex;
-  justify-content: space-around;
+
   margin: 10px;
 }
 .missions {
   width: 350px;
   padding: 10px;
   border: 1px solid black;
+}
+.myhabits {
+  margin-right: 3.3%;
+  margin-left: 5%;
+}
+.my-missions {
+  margin-left: 10%;
 }
 button {
   width: 320px;
