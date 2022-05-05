@@ -9,6 +9,7 @@ export default function Habits({ addMyHabits, habit }) {
         description={"İşlevsel bir kitaptan 25 sayfa oku spor salonuna git"}
         addMyHabits={addMyHabits}
         habit
+        habits
       />
     </div>
   );

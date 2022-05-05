@@ -26,11 +26,13 @@ import Social from "./pages/me/missions/social/Social";
 import WillPower from "./pages/me/missions/will-power/WillPower";
 
 import Navbar from "./components/navbar/Navbar";
+import Musics from "./pages/me/missions/musics/Musics";
 
 function App() {
   return (
     <div className="app">
       <BrowserRouter>
+        <button className="logo">UPPER HUMAN</button>
         <Navbar />
 
         <Routes>
@@ -50,6 +52,7 @@ function App() {
           <Route path="/missions" element={<Missions />} />
           <Route path="/missions/books" element={<Books />} />
           <Route path="/missions/diy" element={<Diy />} />
+          <Route path="/missions/musics" element={<Musics />} />
           <Route path="/missions/finance" element={<Finance />} />
           <Route path="/missions/food-cooking" element={<FoodCooking />} />
           <Route path="/missions/fun" element={<Fun />} />

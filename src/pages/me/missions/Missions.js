@@ -14,6 +14,7 @@ import Personal from "./personal/Personal";
 import Social from "./social/Social";
 import WillPower from "./will-power/WillPower";
 import MyHabits from "../my-habits/MyHabits";
+import Musics from "./musics/Musics";
 //style
 import "./Missions.css";
 import MyMissions from "./my-missions/MyMissions";
@@ -119,6 +120,11 @@ export default function Missions() {
             <div>
               <Personal addMissions={addMissions} />
               <button>Personal</button>
+            </div>
+
+            <div>
+              <Musics addMissions={addMissions} />
+              <button>Musics</button>
             </div>
 
             <div>
