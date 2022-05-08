@@ -37,6 +37,7 @@ export default function Missions() {
   const [showPersonal, setShowpersonal] = useState(false);
   const [showSocial, setShowsocial] = useState(false);
   const [showWillpower, setShowwillpower] = useState(false);
+  const [showMusic, setShowmusic] = useState(false);
   //
   const addMissions = (mission) => {
     setMymissions((myMissions) => {
@@ -67,72 +68,315 @@ export default function Missions() {
         </div>
         {showMissions && (
           <div className="missions">
+            {/**BOOKS SECTION */}
             <div>
-              <Books addMissions={addMissions} />
-              <button>Books</button>
-            </div>
+              <button
+                onClick={() =>
+                  showBooks ? setShowbooks(false) : setShowbooks(true)
+                }
+              >
+                Books
+              </button>
+              {showBooks && <Books addMissions={addMissions} />}
 
-            <div>
-              <Diy addMissions={addMissions} />
-              <button>Diy</button>
+              {showBooks && (
+                <button
+                  onClick={() =>
+                    showBooks ? setShowbooks(false) : setShowbooks(true)
+                  }
+                >
+                  Books
+                </button>
+              )}
             </div>
+            {/**BOOKS SECTION */}
 
+            {/**DIY SECTION */}
             <div>
-              <Finance addMissions={addMissions} />
-              <button>Finance</button>
+              <button
+                onClick={() => (showDiy ? setShowdiy(false) : setShowdiy(true))}
+              >
+                Diy
+              </button>
+              {showDiy && <Diy addMissions={addMissions} />}
+
+              {showDiy && (
+                <button
+                  onClick={() =>
+                    showDiy ? setShowdiy(false) : setShowdiy(true)
+                  }
+                >
+                  Diy
+                </button>
+              )}
             </div>
+            {/**DIY SECTION */}
 
+            {/**FINANCE SECTION */}
             <div>
-              <FoodCooking addMissions={addMissions} />
-              <button>Food-Cooking</button>
+              <button
+                onClick={() =>
+                  showFinance ? setShowfinance(false) : setShowfinance(true)
+                }
+              >
+                Finance
+              </button>
+              {showFinance && <Finance addMissions={addMissions} />}
+              {showFinance && (
+                <button
+                  onClick={() =>
+                    showFinance ? setShowfinance(false) : setShowfinance(true)
+                  }
+                >
+                  Finance
+                </button>
+              )}
             </div>
+            {/**FINANCE SECTION */}
 
+            {/**FOOD SECTION */}
             <div>
-              <Habits habit addMyHabits={addMyHabits} />
-              <button>Habits</button>
+              <button
+                onClick={() =>
+                  showFood ? setShowfood(false) : setShowfood(true)
+                }
+              >
+                Food
+              </button>
+              {showFood && <FoodCooking addMissions={addMissions} />}
+              {showFood && (
+                <button
+                  onClick={() =>
+                    showFood ? setShowfood(false) : setShowfood(true)
+                  }
+                >
+                  Food
+                </button>
+              )}
             </div>
+            {/**FOOD SECTION */}
 
+            {/**HABITS SECTION */}
             <div>
-              <Health addMissions={addMissions} />
-              <button>Health</button>
+              <button
+                onClick={() =>
+                  showHabits ? setShowhabits(false) : setShowhabits(true)
+                }
+              >
+                Habits
+              </button>
+              {showHabits && <Habits habit addMyHabits={addMyHabits} />}
+              {showHabits && (
+                <button
+                  onClick={() =>
+                    showHabits ? setShowhabits(false) : setShowhabits(true)
+                  }
+                >
+                  Habits
+                </button>
+              )}
             </div>
+            {/**HABITS SECTION */}
 
+            {/**HEALTH SECTION */}
             <div>
-              <HouseHold addMissions={addMissions} />
-              <button>Household</button>
+              <button
+                onClick={() =>
+                  showHealth ? setShowhealth(false) : setShowhealth(true)
+                }
+              >
+                Health
+              </button>
+              {showHealth && <Health addMissions={addMissions} />}
+              {showHealth && (
+                <button
+                  onClick={() =>
+                    showHealth ? setShowhealth(false) : setShowhealth(true)
+                  }
+                >
+                  Health
+                </button>
+              )}
             </div>
+            {/**HEALTH SECTION */}
 
+            {/**HOUSEHOLD SECTION */}
             <div>
-              <Humanity addMissions={addMissions} />
-              <button>Humanity</button>
+              <button
+                onClick={() =>
+                  showHousehold
+                    ? setShowhousehold(false)
+                    : setShowhousehold(true)
+                }
+              >
+                Household
+              </button>
+              {showHousehold && <HouseHold addMissions={addMissions} />}
+
+              {showHousehold && (
+                <button
+                  onClick={() =>
+                    showHousehold
+                      ? setShowhousehold(false)
+                      : setShowhousehold(true)
+                  }
+                >
+                  Household
+                </button>
+              )}
             </div>
+            {/**HOUSEHOLD SECTION */}
 
+            {/**HUMANITY SECTION */}
             <div>
-              <Outdoor addMissions={addMissions} />
-              <button>Outdoor</button>
+              <button
+                onClick={() =>
+                  showHumanity ? setShowhumanity(false) : setShowhumanity(true)
+                }
+              >
+                Humanity
+              </button>
+              {showHumanity && <Humanity addMissions={addMissions} />}
+
+              {showHumanity && (
+                <button
+                  onClick={() =>
+                    showHumanity
+                      ? setShowhumanity(false)
+                      : setShowhumanity(true)
+                  }
+                >
+                  Humanity
+                </button>
+              )}
             </div>
+            {/**HUMANITY SECTION */}
 
+            {/**OUTDOOR SECTION */}
             <div>
-              <WillPower addMissions={addMissions} />
-              <button>Willpower</button>
+              <button
+                onClick={() =>
+                  showOutdoor ? setShowoutdoor(false) : setShowoutdoor(true)
+                }
+              >
+                Outdoor
+              </button>
+              {showOutdoor && <Outdoor addMissions={addMissions} />}
+              {showOutdoor && (
+                <button
+                  onClick={() =>
+                    showOutdoor ? setShowoutdoor(false) : setShowoutdoor(true)
+                  }
+                >
+                  Outdoor
+                </button>
+              )}
             </div>
+            {/**OUTDOOR SECTION */}
 
+            {/**WILLPOWER SECTION */}
             <div>
-              <Personal addMissions={addMissions} />
-              <button>Personal</button>
+              <button
+                onClick={() =>
+                  showWillpower
+                    ? setShowwillpower(false)
+                    : setShowwillpower(true)
+                }
+              >
+                Willpower
+              </button>
+              {showWillpower && <WillPower addMissions={addMissions} />}
+              {showPersonal && (
+                <button
+                  onClick={() =>
+                    showWillpower
+                      ? setShowwillpower(false)
+                      : setShowwillpower(true)
+                  }
+                >
+                  Willpower
+                </button>
+              )}
             </div>
+            {/**WILLPOWER SECTION */}
 
+            {/**PERSONAL SECTION */}
             <div>
-              <Musics addMissions={addMissions} />
-              <button>Musics</button>
+              <button
+                onClick={() =>
+                  showPersonal ? setShowpersonal(false) : setShowpersonal(true)
+                }
+              >
+                Personal
+              </button>
+              {showPersonal && <Personal addMissions={addMissions} />}
+              {showPersonal && (
+                <button
+                  onClick={() =>
+                    showPersonal
+                      ? setShowpersonal(false)
+                      : setShowpersonal(true)
+                  }
+                >
+                  Personal
+                </button>
+              )}
             </div>
+            {/**PERSONAL SECTION */}
 
+            {/**MUSIC SECTION */}
             <div>
-              <Social addMissions={addMissions} />
-              <button>Social</button>
+              <button
+                onClick={() =>
+                  showMusic ? setShowmusic(false) : setShowmusic(true)
+                }
+              >
+                Music
+              </button>
+              {showMusic && <Musics addMissions={addMissions} />}
+              {showMusic && (
+                <button
+                  onClick={() =>
+                    showMusic ? setShowmusic(false) : setShowmusic(true)
+                  }
+                >
+                  Music
+                </button>
+              )}
             </div>
+            {/**MUSIC SECTION */}
 
+            {/**SOCIAL SECTION */}
             <div>
+              <button
+                onClick={() =>
+                  showSocial ? setShowsocial(false) : setShowsocial(true)
+                }
+              >
+                Social
+              </button>
+
+              {showSocial && <Social addMissions={addMissions} />}
+              {showSocial && (
+                <button
+                  onClick={() =>
+                    showSocial ? setShowsocial(false) : setShowsocial(true)
+                  }
+                >
+                  Social
+                </button>
+              )}
+            </div>
+            {/**SOCIAL SECTION */}
+
+            {/**FUN SECTION */}
+            <div>
+              <button
+                onClick={() => (showFun ? setShowfun(false) : setShowfun(true))}
+              >
+                Fun
+              </button>
+              {showFun && <Fun addMissions={addMissions} />}
               {showFun && (
                 <button
                   onClick={() =>
@@ -142,18 +386,13 @@ export default function Missions() {
                   Fun
                 </button>
               )}
-              {showFun && <Fun addMissions={addMissions} />}
-              <button
-                onClick={() => (showFun ? setShowfun(false) : setShowfun(true))}
-              >
-                Fun
-              </button>
             </div>
           </div>
         )}
         <div className="my-missions">
           <MyMissions myMissions={myMissions} />
         </div>
+        {/**FUN SECTION */}
       </div>
     </>
   );

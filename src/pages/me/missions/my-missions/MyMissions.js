@@ -5,11 +5,12 @@ import "./MyMissions.css";
 export default function MyMissions({ myMissions }) {
   const [completedMissions, setCompletedMissions] = useState([]);
 
-  const completeMission = (myMission) => {
+  const completeMission = (myMission, e) => {
     const completedMission = {
       description: myMission.description,
     };
     addCompletedMission(completedMission);
+    e.target.parentNode.style.display = "none";
   };
 
   const addCompletedMission = (completedMission) => {
@@ -28,12 +29,11 @@ export default function MyMissions({ myMissions }) {
                 <h3>{myMission.description}</h3>
                 <h3>{myMission.point}</h3>
               </>
-              <button
+              <input
+                type="checkbox"
                 className="complete-mission"
-                onClick={() => completeMission(myMission)}
-              >
-                Complete Mission
-              </button>
+                onClick={(e) => completeMission(myMission, e)}
+              />
             </div>
           ))}
         </div>
@@ -41,6 +41,7 @@ export default function MyMissions({ myMissions }) {
           {completedMissions.map((compMissions) => (
             <div className="completed-missions">
               <h3>{compMissions.description}</h3>
+              <input type="checkbox" checked disabled />
             </div>
           ))}
         </div>

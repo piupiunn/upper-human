@@ -2,16 +2,15 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  color: white;
 }
 body {
   width: 2000px;
-  background-color: #222426;
+  background-color: #fdfbf8;
   font-family: "Poiret One", cursive;
 }
 button {
   font-family: inherit;
-  background-color: #c83232;
+  background-color: #e6e6e6;
   border: none;
   border-radius: 15px;
   width: 60px;
@@ -19,7 +18,7 @@ button {
 input {
   background-color: black;
 }
-..logo {
+.logo {
   margin-left: 43%;
   justify-content: center;
   font-size: 15px;
