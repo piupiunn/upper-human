@@ -1,0 +1,106 @@
+.book {
+  display: grid;
+  margin-top: -20px;
+  margin-left: 10px;
+}
+.book h3 {
+  margin-top: 10px;
+  font-size: 11px;
+}
+.book h4 {
+  margin-left: 0px;
+  font-size: 9px;
+}
+.book img {
+  margin-top: 5px;
+  width: 100px;
+  height: 150px;
+  border-radius: 10px;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  filter: contrast(120%);
+  color: black;
+}
+
+.book-info {
+  width: 100px;
+  height: 150px;
+
+  color: black;
+  padding-left: 15px;
+}
+.book-box {
+  margin-left: 50px;
+  margin-bottom: 20px;
+  transition: all 0.7s ease;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  width: 150px;
+  height: 220px;
+  background-color: white;
+  border-radius: 10px;
+}
+.book-box:hover {
+  transform: scale(1.4);
+  transition: all 0.7s ease;
+}
+.buttons {
+  display: flex;
+  margin-left: -10px;
+  color: white;
+}
+.buttons a {
+  text-decoration: none;
+  font-weight: 1000;
+}
+.buttons button {
+  border-radius: 4px;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  box-sizing: border-box;
+  font-weight: 1000;
+  transition: background 0.8s;
+  width: 50px;
+  height: 20px;
+  margin-top: 20px;
+  margin-right: 10px;
+  background-color: #ffffff;
+  margin-left: 15px;
+  font-size: 10px;
+  padding: 2px;
+  color: #36395a;
+  border-width: 0;
+  transition: box-shadow 0.15s, transform 0.15s;
+}
+.buttons button:focus {
+  box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+}
+
+.buttons button:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 1px 2px -1px, #d6d6e7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.buttons button:active {
+  box-shadow: #d6d6e7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.no-youtube {
+  visibility: collapse;
+}
+
+.center-button {
+  margin-left: 35px;
+}
+.mission-button {
+  width: 15px;
+  height: 15px;
+  margin-left: 135px;
+  margin-bottom: 5px;
+}
+.mission-button:hover {
+  cursor: pointer;
+}

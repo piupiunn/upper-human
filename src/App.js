@@ -25,6 +25,15 @@ import Personal from "./pages/me/missions/personal/Personal";
 import Social from "./pages/me/missions/social/Social";
 import WillPower from "./pages/me/missions/will-power/WillPower";
 
+import Felsefe from "./pages/me/missions/books/categories/felsefe/Felsefe";
+import Tarih from "./pages/me/missions/books/categories/tarih/Tarih";
+import Sanat from "./pages/me/missions/books/categories/sanat/Sanat";
+import Bilim from "./pages/me/missions/books/categories/bilim/Bilim";
+import Yonetım from "./pages/me/missions/books/categories/yonetim/Yonetım";
+import KisiselGelisim from "./pages/me/missions/books/categories/kisisel-gelisim/KisiselGelisim";
+
+import Roman from "./pages/me/missions/books/categories/roman/Roman";
+
 import Navbar from "./components/navbar/Navbar";
 import Musics from "./pages/me/missions/musics/Musics";
 
@@ -50,7 +59,18 @@ function App() {
           <Route path="/income-expenses" element={<IncomeExpenses />} />
 
           <Route path="/missions" element={<Missions />} />
+
           <Route path="/missions/books" element={<Books />} />
+          <Route path="/missions/books/felsefe" element={<Felsefe />} />
+          <Route path="/missions/books/tarih" element={<Tarih />} />
+          <Route path="/missions/books/sanat" element={<Sanat />} />
+          <Route path="/missions/books/bilim" element={<Bilim />} />
+          <Route path="/missions/books/yonetim" element={<Yonetım />} />
+          <Route
+            path="/missions/books/kisisel-gelisim"
+            element={<KisiselGelisim />}
+          />
+          <Route path="/missions/books/roman" element={<Roman />} />
           <Route path="/missions/diy" element={<Diy />} />
           <Route path="/missions/musics" element={<Musics />} />
           <Route path="/missions/finance" element={<Finance />} />

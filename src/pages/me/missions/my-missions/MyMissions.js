@@ -8,6 +8,7 @@ export default function MyMissions({ myMissions }) {
   const completeMission = (myMission, e) => {
     const completedMission = {
       description: myMission.description,
+      name: myMission.name,
     };
     addCompletedMission(completedMission);
     e.target.parentNode.style.display = "none";
@@ -28,6 +29,7 @@ export default function MyMissions({ myMissions }) {
               <div className="animation-and-description">
                 <img className="mymission-icon" src="/img/flag.png" alt="" />
                 <h3>{myMission.description}</h3>
+                <h3>{myMission.name}</h3>
               </div>
               <input
                 type="checkbox"
@@ -41,6 +43,7 @@ export default function MyMissions({ myMissions }) {
           {completedMissions.map((compMissions) => (
             <div className="completed-missions">
               <h3>{compMissions.description}</h3>
+              <h3>{compMissions.name}</h3>
               <img className="trophy-icon" src="/img/trophy2.png" alt="" />
             </div>
           ))}

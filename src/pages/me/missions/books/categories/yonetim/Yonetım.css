@@ -1,0 +1,13 @@
+.yonetim {
+  display: flex;
+  width: 600px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-left: -170px;
+  flex: 20%;
+}
+@media screen and (max-width: 700px) {
+  .yonetim {
+    flex-direction: column;
+  }
+}
