@@ -7,7 +7,7 @@ import "./Mission.css";
 
 export default function Mission({
   description,
-  point,
+
   addMissions,
   habit,
   addMyHabits,
@@ -30,26 +30,16 @@ export default function Mission({
   const addMission = () => {
     const mission = {
       description,
-      point,
     };
     addMissions(mission);
-  };
-  const addHabit = () => {
-    const habits = {
-      description,
-    };
-    addMyHabits(habits);
   };
 
   return (
     <div className="mission-box">
       <div className="icon-box">{missionIcon}</div>
       <div className="mission-description">{description}</div>
-      <div className="point">Başarı Puanı:{point}</div>
-      <button
-        className="mission-button "
-        onClick={habit ? addHabit : addMission}
-      >
+
+      <button className="mission-button " onClick={addMission}>
         <PlusIcon />
       </button>
     </div>

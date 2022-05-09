@@ -25,10 +25,10 @@ export default function MyMissions({ myMissions }) {
         <div>
           {myMissions?.map((myMission) => (
             <div className="my-missions-box-inside">
-              <>
+              <div className="animation-and-description">
+                <img className="mymission-icon" src="/img/flag.png" alt="" />
                 <h3>{myMission.description}</h3>
-                <h3>{myMission.point}</h3>
-              </>
+              </div>
               <input
                 type="checkbox"
                 className="complete-mission"
@@ -41,7 +41,7 @@ export default function MyMissions({ myMissions }) {
           {completedMissions.map((compMissions) => (
             <div className="completed-missions">
               <h3>{compMissions.description}</h3>
-              <input type="checkbox" checked disabled />
+              <img className="trophy-icon" src="/img/trophy2.png" alt="" />
             </div>
           ))}
         </div>

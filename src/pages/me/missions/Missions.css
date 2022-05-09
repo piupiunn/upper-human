@@ -23,14 +23,23 @@ button {
   font-size: 14px;
   cursor: pointer;
   border: none;
-  background-color: #6e6e6e;
+  background-color: #cacaca;
   margin: 5px;
   margin-left: auto;
   margin-right: auto;
   background: transparent;
 }
 
-.new-missions {
-  margin-left: 38%;
-  margin-top: 10px;
+.missions-navbar {
+  display: flex;
+}
+.new-mission-button {
+  margin-right: 330px;
+}
+.missions-navbar p {
+  margin-top: 20px;
+  margin-right: 200px;
+}
+.my-habits {
+  margin-left: 250px;
 }

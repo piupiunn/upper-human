@@ -1,9 +1,12 @@
 .my-missions-box {
   display: flex;
-  border: 1px solid black;
+
   margin: 10px;
   width: 550px;
   gap: 35px;
+}
+.animation-and-description {
+  display: flex;
 }
 .my-missions-box-inside {
   width: 300px;
@@ -15,10 +18,11 @@
   align-items: center;
   border-radius: 15px;
   margin: 10px;
+  padding: 10px;
   color: black !important;
   margin-left: auto;
   margin-right: auto;
-  background: rgb(236, 236, 236);
+  background: rgb(233, 243, 255);
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
@@ -29,18 +33,28 @@
   text-decoration: line-through;
   border-radius: 10px;
   display: flex;
+  padding: 10px;
   justify-content: center;
   align-items: center;
   border-radius: 15px;
   margin: 10px;
   color: black !important;
-  margin-left: auto;
-  margin-right: auto;
-  background: rgb(236, 236, 236);
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+  background: #e9ffef;
+  box-shadow: rgba(128, 106, 106, 0.4) 0px 2px 4px,
+    rgba(122, 93, 93, 0.3) 0px 7px 13px -3px,
+    rgba(123, 85, 85, 0.2) 0px -3px 0px inset;
 }
 
-.complete-mission {
-  border: none;
+input {
+}
+.trophy-icon {
+  width: 35px;
+  height: 35px;
+  margin-bottom: 35px;
+}
+.mymission-icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
 }

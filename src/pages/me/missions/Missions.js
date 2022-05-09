@@ -54,14 +54,18 @@ export default function Missions() {
   console.log(myHabits);
   return (
     <>
-      <button
-        className="new-missions"
-        onClick={() =>
-          showMissions ? setShowMissions(false) : setShowMissions(true)
-        }
-      >
-        New Missions
-      </button>
+      <div className="missions-navbar">
+        <p className="my-habits">Alışkanlıklarım</p>
+        <button
+          onClick={() => setShowMissions(true)}
+          className="new-mission-button"
+        >
+          New Missions
+        </button>
+
+        <p>Görevlerim</p>
+        <p>Bitirdiğim Görevlerim</p>
+      </div>
       <div className="all-missions">
         <div className="myhabits">
           <MyHabits myHabits={myHabits} />

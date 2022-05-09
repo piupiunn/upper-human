@@ -1,14 +1,29 @@
 .my-habit-box {
   display: grid;
-  border: 1px solid black;
+
   margin: 10px;
   width: 550px;
 }
 .my-habit-box-inside {
-  width: 250px;
-  border: 1px solid black;
-  background-color: #181a1b;
-  height: 100px;
+  width: 200px;
+
+  padding: 10px;
+  border-radius: 10px;
+  display: grid;
+  gap: 3px;
+  justify-content: left;
+  align-items: center;
   border-radius: 15px;
   margin: 10px;
+  color: black !important;
+
+  background: rgb(254, 244, 227);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.my-habit-box-inside h4 {
+  margin-left: 50px;
+}
+.my-habit-box-inside h3 {
+  margin-bottom: 10px;
 }
