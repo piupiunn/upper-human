@@ -32,7 +32,7 @@ export default function Yonetım({ addMissions }) {
       <Book
         name={"Toplum Sözleşmesi"}
         imageSource={bookLinks.Rousseau}
-        author={"Jean-Jacques Rousseau - İ. B. Kültür Yayınları"}
+        author={"J-J Rousseau - İ. B. Kültür Yayınları"}
         searchLink={searchLinks.Rousseau}
         noYoutube
         styleButton={{ marginTop: "40px" }}

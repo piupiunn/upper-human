@@ -39,9 +39,7 @@ export default function Mission({
       <div className="icon-box">{missionIcon}</div>
       <div className="mission-description">{description}</div>
 
-      <button className="mission-button " onClick={addMission}>
-        <PlusIcon />
-      </button>
+      <PlusIcon className="mission-button " onClick={addMission} />
     </div>
   );
 }
@@ -49,5 +47,7 @@ export default function Mission({
 const PlusIcon = styled(Plus)`
   line {
     color: black;
+    width: 150px;
+    height: 150px;
   }
 `;

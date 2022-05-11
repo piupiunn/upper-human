@@ -26,7 +26,7 @@ export default function Book({
   };
   return (
     <div className="book-box">
-      <PlusIcon className="mission-button" onClick={addMission} />
+      <PlusIcon className="book-button" onClick={addMission} />
 
       <div className="book">
         <h3 style={style}>{name}</h3>

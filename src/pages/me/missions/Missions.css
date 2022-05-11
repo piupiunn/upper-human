@@ -14,6 +14,7 @@
 }
 .my-missions {
   margin-left: 10%;
+  width: 550px;
 }
 /*button*/
 button {
@@ -34,12 +35,18 @@ button {
   display: flex;
 }
 .new-mission-button {
-  margin-right: 330px;
+  margin-right: 370px;
 }
-.missions-navbar p {
+.my-mission {
   margin-top: 20px;
   margin-right: 200px;
 }
+.doned-missions {
+  margin-top: 20px;
+
+  margin-right: 70px;
+}
 .my-habits {
-  margin-left: 250px;
+  margin-top: 20px;
+  margin-left: 300px;
 }

@@ -43,8 +43,10 @@ export default function MyMissions({ myMissions }) {
           {completedMissions.map((compMissions) => (
             <div className="completed-missions">
               <h3>{compMissions.description}</h3>
-              <h3>{compMissions.name}</h3>
-              <img className="trophy-icon" src="/img/trophy2.png" alt="" />
+              <h3>
+                {compMissions.name} {compMissions.name && "oku"}
+              </h3>
+              <img className="trophy-icon" src="/img/medal.png" alt="" />
             </div>
           ))}
         </div>

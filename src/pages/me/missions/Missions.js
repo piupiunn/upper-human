@@ -63,8 +63,8 @@ export default function Missions() {
           New Missions
         </button>
 
-        <p>Görevlerim</p>
-        <p>Bitirdiğim Görevlerim</p>
+        <p className="my-mission">Görevlerim</p>
+        <p className="doned-missions">Bitirdiğim Görevlerim</p>
       </div>
       <div className="all-missions">
         <div className="myhabits">

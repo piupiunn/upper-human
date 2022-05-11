@@ -1,6 +1,6 @@
 .habit-box {
   width: 200px;
-
+  margin-bottom: 15px;
   padding: 10px;
   border-radius: 10px;
   display: flex;
