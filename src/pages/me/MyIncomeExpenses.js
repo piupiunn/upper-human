@@ -4,7 +4,6 @@ import "./MyIncomeExpenses.css";
 //components
 
 export default function MyIncomeExpenses({ myBills }) {
-  console.log(myBills);
   return (
     <div className="my-bills">
       {myBills?.map((myBill) => (

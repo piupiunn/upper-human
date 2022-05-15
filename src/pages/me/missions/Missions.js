@@ -51,7 +51,7 @@ export default function Missions() {
     });
   };
   //
-  console.log(myHabits);
+
   return (
     <>
       <div className="missions-navbar">

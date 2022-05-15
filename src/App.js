@@ -36,6 +36,8 @@ import Roman from "./pages/me/missions/books/categories/roman/Roman";
 
 import Navbar from "./components/navbar/Navbar";
 import Musics from "./pages/me/missions/musics/Musics";
+import ReadyGoHabits from "./pages/ready-go-habits/ReadyGoHabits";
+import ShortNotes from "./pages/short-notes/ShortNotes";
 
 function App() {
   return (
@@ -51,6 +53,8 @@ function App() {
 
           <Route path="/login" element={<Login />} />
 
+          <Route path="/ready-go-habits" element={<ReadyGoHabits />} />
+
           <Route path="/me/my-income-expenses" element={<MyIncomeExpenses />} />
           <Route path="/me/my-skills" element={<MySkills />} />
           <Route path="/me/my-habits" element={<MyHabits />} />
@@ -59,6 +63,8 @@ function App() {
           <Route path="/income-expenses" element={<IncomeExpenses />} />
 
           <Route path="/missions" element={<Missions />} />
+
+          <Route path="/short-notes" element={<ShortNotes />} />
 
           <Route path="/missions/books" element={<Books />} />
           <Route path="/missions/books/felsefe" element={<Felsefe />} />

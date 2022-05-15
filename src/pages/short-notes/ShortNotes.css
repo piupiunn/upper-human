@@ -1,0 +1,24 @@
+.short-notes-section {
+  display: grid;
+}
+.short-notes {
+  width: 500px;
+  padding: 10px;
+  border-radius: 10px;
+  display: grid;
+  font-weight: 700;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 15px;
+
+  margin: 10px;
+  color: black !important;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.short-notes li {
+  margin: 10px;
+}

@@ -1,16 +1,47 @@
-.bill-bot-modal {
-  width: 100px;
-  margin: auto;
-  margin-top: 10%;
-}
-.bill-bot-sections {
+.second-bill-bot-modal {
+  width: 180px;
+
+  padding: 10px;
+  border-radius: 10px;
   display: grid;
-}
-.bill-bot-modal-page {
-  justify-items: center;
-}
-.bill-bot-modal-backdrop {
+  gap: 3px;
+  justify-content: left;
+  align-items: center;
+  border-radius: 15px;
   margin: 10px;
-  width: 400px;
-  border: 1px solid white;
+  color: black !important;
+
+  background: rgb(254, 244, 227);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.second-bill-bot-modal input {
+  width: 50px;
+  border: none;
+  background-color: #cdffe4;
+}
+.billbot-button {
+  margin-left: 5px;
+  margin-top: px;
+  width: 20px;
+  height: 20px;
+}
+.second-bill-bot-modal form {
+  margin-top: 0px;
+  margin-left: 40px;
+}
+.amount-section {
+  display: flex;
+  margin-top: -30px;
+}
+.title-section {
+  display: flex;
+}
+.title {
+  margin-top: 0px;
+}
+.title-section img {
+  width: 30px;
+  height: 30px;
+  margin-top: 5px;
 }

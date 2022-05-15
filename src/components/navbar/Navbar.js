@@ -15,6 +15,12 @@ export default function Navbar() {
       <NavLink to="/signup">
         <p>Kayıt ol</p>
       </NavLink>
+      <NavLink to="/ready-go-habits">
+        <p>Hazır Görevler</p>
+      </NavLink>
+      <NavLink to="/short-notes">
+        <p>Kısa Notlar</p>
+      </NavLink>
       <NavLink className="right-border" to="/login">
         <p>Giriş yap</p>
       </NavLink>

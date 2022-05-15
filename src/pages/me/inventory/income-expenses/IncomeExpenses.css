@@ -1,5 +1,7 @@
 .income-expenses {
   display: flex;
+  width: 50px;
+  margin-left: 45%;
 }
 .bill-list-button {
   height: 50px;
