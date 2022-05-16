@@ -33,11 +33,10 @@
   margin-left: 50px;
   margin-bottom: 20px;
   transition: all 0.7s ease;
-  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
-    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+
   width: 150px;
   height: 220px;
-  background-color: white;
+  background-color: #f0f0f0;
   border-radius: 10px;
 }
 .book-box:hover {
@@ -55,16 +54,15 @@
 }
 .buttons button {
   border-radius: 4px;
-  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
-    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+
   box-sizing: border-box;
   font-weight: 1000;
   transition: background 0.8s;
   width: 50px;
   height: 20px;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-right: 10px;
-  background-color: #ffffff;
+  background-color: #e7efff;
   margin-left: 15px;
   font-size: 10px;
   padding: 2px;
@@ -73,13 +71,9 @@
   transition: box-shadow 0.15s, transform 0.15s;
 }
 .buttons button:focus {
-  box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
-    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
 }
 
 .buttons button:hover {
-  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
-    rgba(45, 35, 66, 0.3) 0 1px 2px -1px, #d6d6e7 0 -3px 0 inset;
   transform: translateY(-2px);
 }
 
